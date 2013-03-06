@@ -20,6 +20,10 @@ ssh_options[:forward_agent] = true
 require 'bundler/capistrano'
 set :bundle_without, [:test, :development, :deploy]
 
+# Rbenv
+# -----
+default_run_options[:shell] = '/bin/bash --login'
+
 
 # Rails: Asset Pipeline
 # ---------------------
