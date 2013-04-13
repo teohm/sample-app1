@@ -41,7 +41,7 @@ after "deploy:restart", "deploy:cleanup"
 # ----------------
 set :user, "deploy"
 server "testbox", :web, :app, :db, :primary => true
-set :deploy_to, "/u/apps/#{application}"
+set :deploy_to, "/home/apps/#{application}"
 set :rails_env, "production"
 
 
